@@ -42,8 +42,8 @@ public:
     QList<BleDeviceInfo> devices() const;
 
 signals:
-    /// 发现一个新设备
-    void deviceDiscovered(const BleDeviceInfo &info);
+    /// 发现一个新设备（值传递 — 跨线程 queued connection 要求可复制）
+    void deviceDiscovered(const BleDeviceInfo info);
 
     /// 扫描完成（手动停止 或 超时）
     void scanFinished();

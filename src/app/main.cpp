@@ -6,10 +6,6 @@
 #include "BleConnection.h"
 #include "BleDeviceInfo.h"
 
-// 注册自定义类型到 Qt 元对象系统 — 使 BleDeviceInfo 可跨线程通过信号/槽传递
-Q_DECLARE_OPAQUE_POINTER(armble::BleScanner*)
-Q_DECLARE_OPAQUE_POINTER(armble::BleConnection*)
-
 /**
  * @brief ARM-BLE 调试器 — 应用入口
  *
