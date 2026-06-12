@@ -31,3 +31,5 @@ struct BleDeviceInfo {
 };
 
 } // namespace armble
+
+Q_DECLARE_METATYPE(armble::BleDeviceInfo)
