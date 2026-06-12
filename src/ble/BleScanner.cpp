@@ -52,7 +52,6 @@ QList<BleDeviceInfo> BleScanner::devices() const
 void BleScanner::onDeviceDiscovered(const QBluetoothDeviceInfo &qtInfo)
 {
     BleDeviceInfo info;
-    info.qtInfo  = qtInfo;
     info.name    = qtInfo.name();
     info.address = qtInfo.address().toString();
     info.rssi    = qtInfo.rssi();
