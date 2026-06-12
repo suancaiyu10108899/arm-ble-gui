@@ -120,7 +120,7 @@ void DeviceScanPanel::onDisconnectClicked()
     emit disconnectRequested();
 }
 
-void DeviceScanPanel::onDeviceDiscovered(const armble::BleDeviceInfo &info)
+void DeviceScanPanel::onDeviceDiscovered(const armble::BleDeviceInfo info)
 {
     m_deviceList->addItem(info.displayText());
 }

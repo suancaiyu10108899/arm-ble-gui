@@ -43,7 +43,7 @@ private slots:
     void onScanClicked();
     void onConnectClicked();
     void onDisconnectClicked();
-    void onDeviceDiscovered(const armble::BleDeviceInfo &info);
+    void onDeviceDiscovered(const armble::BleDeviceInfo info);
     void onScanFinished();
     void onScanError(const QString &msg);
     void onConnectionStateChanged(int state);
